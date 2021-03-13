@@ -1,14 +1,10 @@
 import React from "react";
-import { shallow, ShallowWrapper } from "enzyme";
+import { shallow } from "enzyme";
 import App from "./App";
 import Timer from "../Timer/Timer";
 
 describe("App Component", () => {
-  let container: ShallowWrapper<
-    any,
-    Readonly<{}>,
-    React.Component<{}, {}, any>
-  >;
+  let container: any;
 
   beforeEach(() => {
     container = shallow(<App />);
